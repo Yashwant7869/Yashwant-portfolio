@@ -33,7 +33,7 @@ import vercelLogo from "./assets/tech_logo/vercel.png";
 // Experience Section Logo's
 import docxitologo from "./assets/company_logo/docxitologo.png";
 import cdaclogo from "./assets/company_logo/cdaclogo.png";
-import aagazlogo from "./assets/company_logo/aagazlogo.png";
+import aagazlogo from "./assets/company_logo/aagaz_logo.png";
 
 // Education Section Logo's
 import mplogo from "./assets/education_logo/mplogo.png";
