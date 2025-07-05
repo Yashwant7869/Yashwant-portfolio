@@ -33,7 +33,7 @@ import vercelLogo from "./assets/tech_logo/vercel.png";
 // Experience Section Logo's
 import docxitologo from "./assets/company_logo/docxitologo.png";
 import cdaclogo from "./assets/company_logo/cdaclogo.png";
-import Aagazlogo from "./assets/company_logo/aagazlogo.png";
+import aagazlogo from "./assets/company_logo/aagazlogo.png";
 
 // Education Section Logo's
 import mplogo from "./assets/education_logo/mplogo.png";
@@ -135,7 +135,7 @@ export const experiences = [
   },
   {
     id: 2,
-    img: Aagazlogo,
+    img: aagazlogo,
     role: "Cyber Security Outreach Intern",
     company: " Aagaz Internship (Aawaj Jankalyan Samiti) ",
     date: "September 2021 - August 2022",
