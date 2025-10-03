@@ -5,7 +5,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="py-12 sm:py-16 lg:py-24 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 font-sans bg-skills-gradient clip-path-custom-3"
+      className="py-12 sm:py-16 lg:py-24 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 font-sans bg-skills-gradient  "
     >
       {/* Section Title */}
       <div className="text-center mb-8 sm:mb-12 lg:mb-16">
