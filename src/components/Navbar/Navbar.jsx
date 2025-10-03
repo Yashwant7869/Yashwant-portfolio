@@ -69,24 +69,29 @@ const Navbar = () => {
         </ul>
 
         {/* Social Icons */}
-        <div className="hidden md:flex space-x-4">
-          <a
-            href="https://github.com/Yashwant7869"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-300 hover:text-[#8245ec]"
-          >
-            <FaGithub size={24} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/yashwant-singh-gour/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-300 hover:text-[#8245ec]"
-          >
-            <FaLinkedin size={24} />
-          </a>
-        </div>
+       <div className="hidden md:flex space-x-4">
+  {/* GitHub Link */}
+  <a
+    href="https://github.com/Yashwant7869"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative w-14 h-14 flex items-center justify-center rounded-full text-gray-300 transition-all duration-500 hover:text-yellow-400 hover:shadow-[0_0_15px_#ffee10]"
+  >
+    <FaGithub size={28} />
+    <span className="absolute top-0 left-0 w-full h-full rounded-full bg-yellow-400 opacity-0 transition-all duration-500 hover:opacity-20"></span>
+  </a>
+
+  {/* LinkedIn Link */}
+  <a
+    href="https://www.linkedin.com/in/yashwant-singh-gour/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative w-14 h-14 flex items-center justify-center rounded-full text-gray-300 transition-all duration-500 hover:text-yellow-400 hover:shadow-[0_0_15px_#ffee10]"
+  >
+    <FaLinkedin size={28} />
+    <span className="absolute top-0 left-0 w-full h-full rounded-full bg-yellow-400 opacity-0 transition-all duration-500 hover:opacity-20"></span>
+  </a>
+</div>
 
         {/* Mobile Menu Icon */}
         <div className="md:hidden">
