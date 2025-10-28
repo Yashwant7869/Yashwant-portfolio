@@ -58,7 +58,7 @@ const About = () => {
               text="Resume"
               onClick={() => {
                  const link = document.createElement('a');
-    link.href = "https://docs.google.com/document/d/1MsLFM-jOhffEed8xqCVYicszDF5fS3bO/export?format=pdf";
+    link.href = "https://docs.google.com/document/1gVNCo1L0tsFx7zeSsbmUrs9sXHY7CrA_vto41Ig-PB4/export?format=pdf";
     link.download = "Yashwant_Singh_Resume.pdf";
     document.body.appendChild(link);
     link.click();
