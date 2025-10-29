@@ -31,6 +31,7 @@ import netlifyLogo from "./assets/tech_logo/netlify.png";
 import vercelLogo from "./assets/tech_logo/vercel.png";
 
 // Experience Section Logo's
+import brakttlogo from "./assets/company_logo/braktt.png";
 import docxitologo from "./assets/company_logo/docxitologo.png";
 import cdaclogo from "./assets/company_logo/cdaclogo.png";
 import aagazlogo from "./assets/company_logo/aagaz_logo.png";
@@ -100,9 +101,33 @@ export const SkillsInfo = [
 export const experiences = [
   {
     id: 0,
-    img: docxitologo,
+    img: brakttlogo,
     role: "SDE INTERN",
-    company: "Docxito (A Product of Autofabrico Manufacturing )",
+    company: "Braktt Technology Pvt. Ltd. (Bhopal, Mp)",
+    date: " Oct’ 2025-Present",
+    desc: "• Contributing to full-stack web development using the MERN stack (MongoDB, Express.js, React, Node.js). Building and integrating RESTful APIs to ensure smooth communication between frontend and backend.Debugging and optimizing code to enhance performance and user experience.Writing clean, reusable, and secure code while collaborating with the development team",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Tailwind CSS",
+      "React.js",
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST API Integration",
+      "postman",
+      "Git",
+      "agile"
+    ],
+  },
+  {
+    id: 0,
+    img: docxitologo,
+    role: "Frontend Devloper INTERN",
+    company: "Docxito (A Product of Autofabrico Manufacturing ) (Remote) ",
     date: " Feb’ 2025-April’ 2025   ",
     desc: "Developed and optimized mobile UI components using React Native, TypeScript, and Tailwind CSS. Integrated REST APIs and enhanced overall app performance by refactoring and structuring clean, efficient code. Contributed to a faster and more user-friendly experience through close collaboration with cross-functional teams. Gained hands-on experience in a fast-paced startup environment focused on rapid iteration, scalable design, and AI-integrated workflows.",
     skills: [
