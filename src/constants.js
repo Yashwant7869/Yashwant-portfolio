@@ -105,7 +105,7 @@ export const experiences = [
     role: "SDE INTERN",
     company: "Braktt Technology Pvt. Ltd. (Bhopal, Mp)",
     date: " Oct’ 2025-Present",
-    desc: "• Contributing to full-stack web development using the MERN stack (MongoDB, Express.js, React, Node.js). Building and integrating RESTful APIs to ensure smooth communication between frontend and backend.Debugging and optimizing code to enhance performance and user experience.Writing clean, reusable, and secure code while collaborating with the development team",
+    desc: "Contributing to full-stack web development using the MERN stack (MongoDB, Express.js, React, Node.js). Building and integrating RESTful APIs to ensure smooth communication between frontend and backend.Debugging and optimizing code to enhance performance and user experience.Writing clean, reusable, and secure code while collaborating with the development team",
     skills: [
       "HTML",
       "CSS",
@@ -188,7 +188,7 @@ export const education = [
     date: "2022 - 2026",
     grade: "7.57 CGPA",
     desc: "I have a strong interest in both Web Development and the Internet of Things (IoT), and I actively work on integrating these technologies to build smart, connected solutions. With hands-on experience in HTML, CSS, JavaScript, React, and Node.js, I develop responsive and user-friendly web applications. Alongside this, my background in IoT allows me to work with sensors, microcontrollers, and cloud platforms to create real-time, data-driven systems. I enjoy building end-to-end solutions where IoT devices communicate seamlessly with web interfaces, delivering innovative and impactful user experiences.",
-    degree: "B.tech - IOT department of IT",
+    degree: "B.tech, CSE-IOT",
   },
   {
     id: 1,
