@@ -56,14 +56,8 @@ const About = () => {
           <div className="mt-8 w-full max-w-sm">
             <ElectricButton
               text="Resume"
-              onClick={() => {
-                 const link = document.createElement('a');
-    link.href = "https://docs.google.com/document/1gVNCo1L0tsFx7zeSsbmUrs9sXHY7CrA_vto41Ig-PB4/export?format=pdf";
-    link.download = "Yashwant_Singh_Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }}
+              href="https://docs.google.com/document/d/1gVNCo1L0tsFx7zeSsbmUrs9sXHY7CrA_vto41Ig-PB4/edit?usp=sharing"
+              openInNewTab={true}
               className="cv-button"
               containerHeight="120px"
               glowColor="#8245ec"

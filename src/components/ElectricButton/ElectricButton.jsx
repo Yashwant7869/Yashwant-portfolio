@@ -6,6 +6,8 @@ const ElectricButton = ({
   onClick = () => {}, 
   className = "",
   disabled = false,
+  href = "",
+  openInNewTab = true,
   customStyles = {},
   filamentColor = "#8b451333",
   filamentGrowColor = "#fdfdf9", 
@@ -32,6 +34,21 @@ const ElectricButton = ({
     ...customStyles
   };
 
+  const handleClick = (event) => {
+    onClick(event);
+
+    if (!href || event.defaultPrevented) {
+      return;
+    }
+
+    if (openInNewTab) {
+      window.open(href, '_blank', 'noopener,noreferrer');
+      return;
+    }
+
+    window.location.assign(href);
+  };
+
   return (
     <div 
       className={`electric-button-container ${className}`}
@@ -44,7 +61,7 @@ const ElectricButton = ({
       
       <button 
         className="electric-button" 
-        onClick={onClick}
+        onClick={handleClick}
         disabled={disabled}
         type="button"
       >
