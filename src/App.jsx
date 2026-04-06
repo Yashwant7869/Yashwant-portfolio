@@ -1,4 +1,5 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
@@ -9,8 +10,10 @@ import "./App.css";
 import BlurBlob from "./BlurBlob";
 import Experience from "./components/Experience/Experience";
 import Work from "./components/Work/Work";
+import Blog from "./components/Blog/Blog";
+import BlogDetails from "./components/Blog/BlogDetails";
 
-function App() {
+const HomePage = () => {
   return (
     <div className="bg-[#050414]">
       <BlurBlob
@@ -23,12 +26,22 @@ function App() {
         <About />
         <Experience />
         <Work />
+        <Blog />
         <Skills />
         <Education />
         <Contact />
         <Footer />
       </div>
     </div>
+  );
+};
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/blog/:id" element={<BlogDetails />} />
+    </Routes>
   );
 }
 
