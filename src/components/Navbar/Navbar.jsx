@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,6 +68,9 @@ const Navbar = () => {
               </button>
             </li>
           ))}
+          <li className="cursor-pointer hover:text-[#8245ec]">
+            <Link to="/research-paper">Research Paper</Link>
+          </li>
         </ul>
 
         {/* Social Icons */}
@@ -126,6 +130,11 @@ const Navbar = () => {
                 </button>
               </li>
             ))}
+            <li className="cursor-pointer hover:text-white">
+              <Link to="/research-paper" onClick={() => setIsOpen(false)}>
+                Research Paper
+              </Link>
+            </li>
             <div className="flex space-x-4">
               <a
                 href="https://github.com/Yashwant7869"

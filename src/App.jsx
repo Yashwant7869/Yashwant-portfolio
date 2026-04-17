@@ -12,6 +12,7 @@ import Experience from "./components/Experience/Experience";
 import Work from "./components/Work/Work";
 import Blog from "./components/Blog/Blog";
 import BlogDetails from "./components/Blog/BlogDetails";
+import ResearchPaper from "./components/ResearchPaper/ResearchPaper";
 
 const HomePage = () => {
   return (
@@ -41,6 +42,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/blog/:id" element={<BlogDetails />} />
+      <Route path="/research-paper" element={<ResearchPaper />} />
     </Routes>
   );
 }
