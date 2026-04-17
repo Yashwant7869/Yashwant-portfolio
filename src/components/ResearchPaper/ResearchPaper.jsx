@@ -2,6 +2,8 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
+const siteUrl = "https://www.yashwantsingh.me";
+
 const paperData = {
   title:
     "Real-Time Smart Library Automation System Using RFID and Web-Based Resource Management",
@@ -44,10 +46,25 @@ const ResearchPaper = () => {
         <meta name="citation_pdf_url" content={paperData.pdfUrl} />
         <meta name="citation_doi" content={paperData.doiUrl} />
 
-        <link rel="canonical" href="https://yoursite.com/research-paper" />
+        <link rel="canonical" href={`${siteUrl}/research-paper`} />
+        <meta property="og:url" content={`${siteUrl}/research-paper`} />
         <meta property="og:title" content={paperData.title} />
         <meta property="og:description" content={metaDescription} />
         <meta property="og:type" content="article" />
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ScholarlyArticle",
+            headline: paperData.title,
+            author: paperData.author,
+            datePublished: paperData.publicationDate,
+            description: metaDescription,
+            url: `${siteUrl}/research-paper`,
+            sameAs: [paperData.doiUrl, paperData.pdfUrl],
+            keywords: paperData.keywords.join(", "),
+          })}
+        </script>
       </Helmet>
 
       <main className="min-h-screen bg-slate-950 text-slate-100 px-4 py-10 sm:px-6 lg:px-8">
@@ -104,7 +121,7 @@ const ResearchPaper = () => {
                 href={paperData.pdfUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-lg bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-cyan-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
+                className="inline-flex items-center justify-center rounded-lg bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-cyan-300 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
               >
                 Download PDF
               </a>
@@ -112,7 +129,7 @@ const ResearchPaper = () => {
                 href={paperData.doiUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-lg border border-cyan-300/50 px-5 py-3 text-sm font-semibold text-cyan-100 transition hover:border-cyan-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
+                className="inline-flex items-center justify-center rounded-lg border border-cyan-300/50 px-5 py-3 text-sm font-semibold text-cyan-100 transition hover:border-cyan-200 hover:text-white focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
               >
                 View DOI
               </a>
