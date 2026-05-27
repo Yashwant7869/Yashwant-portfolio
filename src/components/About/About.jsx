@@ -56,7 +56,7 @@ const About = () => {
           <div className="mt-8 w-full max-w-sm">
             <ElectricButton
               text="Resume"
-              href="https://docs.google.com/document/d/1gVNCo1L0tsFx7zeSsbmUrs9sXHY7CrA_vto41Ig-PB4/edit?usp=sharing"
+              href="https://drive.google.com/file/d/10dc2frWlQHi5W7EYo_4tm0BB9IDvgtAl/view?usp=drive_link"
               openInNewTab={true}
               className="cv-button"
               containerHeight="120px"
