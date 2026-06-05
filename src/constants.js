@@ -186,7 +186,7 @@ export const education = [
     img: satilogo,
     school: "Samrat Ashok Technological Institute, Vidisha MP, India",
     date: "2022 - 2026",
-    grade: "7.57 CGPA",
+    grade: "7.85 CGPA",
     desc: "I have a strong interest in both Web Development and the Internet of Things (IoT), and I actively work on integrating these technologies to build smart, connected solutions. With hands-on experience in HTML, CSS, JavaScript, React, and Node.js, I develop responsive and user-friendly web applications. Alongside this, my background in IoT allows me to work with sensors, microcontrollers, and cloud platforms to create real-time, data-driven systems. I enjoy building end-to-end solutions where IoT devices communicate seamlessly with web interfaces, delivering innovative and impactful user experiences.",
     degree: "B.tech, CSE-IOT",
   },
@@ -232,5 +232,34 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
     github: "",
     webapp: "https://localsetu.vercel.app/",
+  },
+
+   {
+    id: 2,
+    title: "StudyAdda– Smart Library Automation Platform",
+    description:
+      " - Developed a real-time smart campus automation platform using RFID, ESP32, Node.js, and MongoDB for attendance,circulation, and seat reservation workflows serving 500+ students. 
+        – Built 20+ secure REST APIs with JWT authentication, concurrent transaction handling, and real-time synchronization,
+          reducing API latency from 800ms to 150ms.
+        – Deployed responsive admin/student dashboards with RFID-based self-service workflows on VPS using Nginx and PM2,
+          reducing transaction time from 120s to 5s",
+   
+    tags: ["React", "Node", "Vite", "TailwindCSS", "IoT"],
+    github: "",
+    webapp: "",
+  },
+       {
+    id: 3,
+    title: "IntelliVibes– Job and Internship Fraud Detection Platform",
+    description:
+      "– Built an AI-powered Job and internship verification platform analyzing 100+ internship listings using Gemini API, and
+        multi-parameter authenticity scoring.
+       – Developed a Chrome extension for real-time internship analysis, detecting suspicious postings.
+      – Engineered 10+ secure REST APIs with Node.js and MongoDB, integrating authentication, recommendation modules, and
+       ElevenLabs TTS-based voice analysis features.",
+   
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Gemini API"],
+    github: "",
+    webapp: "",
   },
 ];
