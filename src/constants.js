@@ -124,7 +124,7 @@ export const experiences = [
     ],
   },
   {
-    id: 0,
+    id: 1,
     img: docxitologo,
     role: "Frontend Devloper INTERN",
     company: "Docxito (A Product of Autofabrico Manufacturing ) (Remote) ",
@@ -143,7 +143,7 @@ export const experiences = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     img: cdaclogo,
     role: "Virtual Intern",
     company: "C-DAC, Noida (Cyber Gyan Project) ",
@@ -159,7 +159,7 @@ export const experiences = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     img: aagazlogo,
     role: "Cyber Security Outreach Intern",
     company: " Aagaz Internship (Aawaj Jankalyan Samiti) ",
@@ -234,32 +234,22 @@ export const projects = [
     webapp: "https://localsetu.vercel.app/",
   },
 
-   {
-    id: 2,
-    title: "StudyAdda– Smart Library Automation Platform",
-    description:
-      " - Developed a real-time smart campus automation platform using RFID, ESP32, Node.js, and MongoDB for attendance,circulation, and seat reservation workflows serving 500+ students. 
-        – Built 20+ secure REST APIs with JWT authentication, concurrent transaction handling, and real-time synchronization,
-          reducing API latency from 800ms to 150ms.
-        – Deployed responsive admin/student dashboards with RFID-based self-service workflows on VPS using Nginx and PM2,
-          reducing transaction time from 120s to 5s",
-   
-    tags: ["React", "Node", "Vite", "TailwindCSS", "IoT"],
-    github: "",
-    webapp: "",
-  },
-       {
-    id: 3,
-    title: "IntelliVibes– Job and Internship Fraud Detection Platform",
-    description:
-      "– Built an AI-powered Job and internship verification platform analyzing 100+ internship listings using Gemini API, and
-        multi-parameter authenticity scoring.
-       – Developed a Chrome extension for real-time internship analysis, detecting suspicious postings.
-      – Engineered 10+ secure REST APIs with Node.js and MongoDB, integrating authentication, recommendation modules, and
-       ElevenLabs TTS-based voice analysis features.",
-   
-    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Gemini API"],
-    github: "",
-    webapp: "",
-  },
+  {
+  id: 2,
+  title: "StudyAdda - Smart Library Automation Platform",
+  description:
+    "Developed a real-time smart campus automation platform using RFID, ESP32, Node.js, and MongoDB for attendance, circulation, and seat reservation workflows serving 500+ students. Built 20+ secure REST APIs with JWT authentication, concurrent transaction handling, and real-time synchronization, reducing API latency from 800ms to 150ms. Deployed responsive admin/student dashboards with RFID-based self-service workflows on VPS using Nginx and PM2, reducing transaction time from 120s to 5s.",
+  tags: ["React", "Node.js", "Vite", "TailwindCSS", "IoT"],
+  github: "",
+  webapp: "",
+},
+{
+  id: 3,
+  title: "IntelliVibes - Job and Internship Fraud Detection Platform",
+  description:
+    "Built an AI-powered job and internship verification platform analyzing 100+ internship listings using Gemini API and multi-parameter authenticity scoring. Developed a Chrome extension for real-time internship analysis, detecting suspicious postings. Engineered 10+ secure REST APIs with Node.js and MongoDB, integrating authentication, recommendation modules, and ElevenLabs TTS-based voice analysis features.",
+  tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Gemini API"],
+  github: "",
+  webapp: "",
+},
 ];
